@@ -1,5 +1,8 @@
 require("@nomiclabs/hardhat-waffle");
-require("dotenv").config();
+require('solidity-coverage')
+require("dotenv").config()
+
+
 
 const ALCHE_KEY = process.env.ALCHE_KEY
 const PK_1 = process.env.PK_1
@@ -16,6 +19,7 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
     console.log(account.address);
   }
 });
+
 
 // You need to export an object to set up your config
 // Go to https://hardhat.org/config/ to learn more

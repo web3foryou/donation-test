@@ -1,5 +1,9 @@
 {
   "name": "hardhat-project",
+  "scripts": {
+    "test:sol": "npx hardhat test",
+    "coverage": "npx hardhat coverage"
+  },
   "dependencies": {
     "@openzeppelin/contracts": "4.3.0",
     "dotenv": "^16.0.0"
