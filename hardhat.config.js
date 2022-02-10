@@ -1,7 +1,10 @@
 require("@nomiclabs/hardhat-waffle");
 require('solidity-coverage')
 require("dotenv").config()
-
+require("./tasks/donation")
+require("./tasks/donationOf")
+require("./tasks/viewDonators")
+require("./tasks/withdrawal")
 
 
 const ALCHE_KEY = process.env.ALCHE_KEY
